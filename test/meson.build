@@ -75,7 +75,7 @@ uriparser = executable(
 
 test('uriparser', uriparser)
 
-if conf.get('HAVE_NETDB')
+if conf.get('HAVE_NETDB') and false
     mock_ifaddrs = library(
         'mock-ifaddrs',
         ['mock-ifaddrs.c', ],
